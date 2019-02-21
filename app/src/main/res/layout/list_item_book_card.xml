@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                                    xmlns:tools="http://schemas.android.com/tools"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:foreground="?attr/selectableItemBackground"
-                                    android:clickable="true"
-                                    android:id="@+id/book_card"
-                                    app:cardElevation="4dp"
-                                    app:cardCornerRadius="2dp"
-                                    tools:minWidth="160dp">
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:bind="http://schemas.android.com/apk/res-auto">
+	<data>
+		<variable name="item" type="moe.feng.nhentai.model.Book"/>
+	</data>
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:foreground="?attr/selectableItemBackground"
+		android:clickable="true"
+		android:id="@+id/book_card"
 
-	<include layout="@layout/list_item_book_card_content"/>
-
-</android.support.v7.widget.CardView>
+		app:cardElevation="4dp"
+		app:cardCornerRadius="2dp"
+		tools:minWidth="160dp">
+		<include layout="@layout/list_item_book_card_content" bind:book="@{item}"/>
+	</android.support.v7.widget.CardView>
+</layout>

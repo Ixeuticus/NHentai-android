@@ -679,7 +679,7 @@ public class WheelProgressView extends View {
 		/**
 		 * Method to call when the progress reaches a value
 		 * in order to avoid float precision issues, the progress
-		 * is rounded to a float with two decimals.
+		 * is tag_bg_purple to a float with two decimals.
 		 *
 		 * In indeterminate mode, the callback is called each time
 		 * the wheel completes an animation cycle, with, the progress value is -1.0f

@@ -28,4 +28,11 @@
 
 	</PreferenceCategory>
 
+	<PreferenceCategory android:key="gallery" android:title="@string/category_gallery">
+		<moe.feng.nhentai.view.pref.SwitchPreference
+			android:key="gallery_image_compression"
+			android:title="@string/set_title_image_compression_in_gallery"
+			android:summary="@string/set_title_image_compression_in_gallery_summary"/>
+	</PreferenceCategory>
+
 </PreferenceScreen>

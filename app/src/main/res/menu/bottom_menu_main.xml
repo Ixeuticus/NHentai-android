@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/deep_purple_500">
+
+	<item
+		android:id="@+id/item_home"
+		android:icon="@drawable/ic_home_white_24dp"
+		android:title="@string/item_home"/>
+
+	<item
+		android:id="@+id/item_fav"
+		android:icon="@drawable/ic_star_white_24dp"
+		android:title="@string/item_favorite_books"/>
+
+	<item
+		android:id="@+id/item_downloaded"
+		android:icon="@drawable/ic_file_download_white_24dp"
+		android:title="@string/item_download"/>
+
+	<item
+		android:id="@+id/item_history"
+		android:icon="@drawable/ic_history"
+		android:title="@string/item_history"/>
+
+</menu>

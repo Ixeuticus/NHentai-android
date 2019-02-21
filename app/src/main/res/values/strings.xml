@@ -11,6 +11,16 @@
     <string name="dialog_permission_msg">NHBooks needs permission to read and wtite on the external storage to save images. Without them, this app could not work well.</string>
     <string name="snack_permission_failed">The request of permissions was denied!</string>
 
+    <!-- 2.0 Main -->
+    <string name="item_history">History</string>
+
+    <!-- 2.0 Details -->
+	<string name="upload_time_format">Upload at %s</string>
+    <string name="total_pages_format">Total %d pages</string>
+	<string name="btn_preview_list">Preview list</string>
+	<string name="header_tags">TAGS</string>
+    <string name="header_related">You may also like…</string>
+
     <!-- New Home Design -->
     <string name="search_bar_hint">Search books here....</string>
     <string name="title_bar_main_recent">Latest Books</string>
@@ -151,6 +161,9 @@
     <string name="category_details">Info page</string>
     <string name="set_title_full_image_in_details">Load Full HD images as preview</string>
     <string name="set_title_full_image_in_details_summary">It will consume plenty of data and memory.</string>
+    <string name="category_gallery">Gallery</string>
+    <string name="set_title_image_compression_in_gallery">Compress images in gallery</string>
+    <string name="set_title_image_compression_in_gallery_summary">Saves data and memory.</string>
     <string name="set_title_allow_standalone_task">Allow standalone task</string>
     <string name="set_title_allow_standalone_task_desc">Each Book will be shown as a standalone task.</string>
     <string name="set_title_android_too_old_desc">This feature isn\'t supported on your Android version</string>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<data>
+		<import type="moe.feng.nhentai.util.ColorGenerator"/>
+		<import type="moe.feng.nhentai.ui.category.CategoryActivity"/>
+		<variable name="item" type="moe.feng.nhentai.model.Tag"/>
+	</data>
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="6dp"
+		android:paddingBottom="6dp"
+		android:paddingStart="8dp"
+		android:paddingEnd="8dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:clickable="true"
+			android:focusable="true"
+			android:foreground="?attr/selectableItemBackground"
+			android:background="@drawable/tag_bg_purple"
+			android:onClick="@{(v) -> CategoryActivity.launch(v.getContext(), item)}">
+
+			<ImageView
+				android:layout_width="32dp"
+				android:layout_height="32dp"
+				android:padding="8dp"
+				android:src="@{item.typeIcon}"
+				android:background="@drawable/shape_oval_translucent"
+				android:importantForAccessibility="no"
+				android:scaleType="centerCrop"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingStart="4dp"
+				android:paddingEnd="12dp"
+				android:text="@{item.name}"
+				android:textColor="@android:color/white"/>
+
+		</LinearLayout>
+
+	</FrameLayout>
+</layout>

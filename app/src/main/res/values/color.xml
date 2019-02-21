@@ -19,5 +19,7 @@
 
 	<color name="status_bar_tint_color">@color/deep_purple_500</color>
 	<color name="status_bar_translucent_color">@android:color/transparent</color>
+
+	<color name="translucent_text_shadow_parallax">#7f000000</color>
 	
 </resources>
